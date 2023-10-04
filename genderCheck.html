@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenderChecker</title>
+</head>
+<body style="background-color: rgb(96, 104, 216);">
+    <center>
+        <h1>Gender checking System</h1>
+        <h3>You wanna know your fucking gender?</h3>
+        <input  id="userInput" type="text" placeholder="Enter a name">
+        <button onclick="checkGender()">Check</button>
+        <div style="margin-top: 20px; color: green;" id="btn"></div>
+        </center>
+        
+    <Script>
+            function checkGender() {
+               var btnEl = document.getElementById("btn");
+               console.log(document.getElementById("btn"))
+
+            var inp = userInput.value;
+
+            if (inp == "Samuel" || inp == "Gauis" || inp == "Joshua" || inp == "Tolu") {
+                    console.log(inp + " is a male");
+                    btnEl.innerText = (inp + " is a male")
+            } else if (inp == "Folakemi" || inp == "Dupe" || inp == "Testimony" || inp == "kemi") {
+                    console.log(inp + " is a female");
+                    btnEl.innerText = (inp + " is a female")
+            } else if (inp == "Ayomide" || inp == "Oluwafemi" || inp == "Faith") {
+                    console.log(inp + " is either a Male or a Female")
+                    btnEl.innerText = (inp + " is either a Male or a Female")
+            } else if(inp == "Abdullatif" || inp == "Kerimot" || inp == "Natifat"){
+                console.log( inp + " you must  be a muslim");
+                    btnEl.innerText = ( inp + " you must  be a muslim");
+            } else {
+                    console.log("I dont know " + inp);
+                    btnEl.innerText = ("I don't know" + inp);
+            } 
+            
+            
+            }
+    </Script>
+</body>
+</html>
